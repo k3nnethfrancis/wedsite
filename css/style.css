@@ -1,20 +1,82 @@
 @font-face {
     font-family: 'CustomFont';
-    src: url('../assets/fonts//Caveat-VariableFont_wght.ttf') format('truetype');
+    src: url('../assets/fonts/Caveat-VariableFont_wght.ttf') format('truetype');
 }
 
 body {
-    font-family: 'CustomFont', sans-serif;
+    font-family: 'CustomFont', 'Brush Script MT', 'Lucida Handwriting', 'Comic Sans MS', cursive, sans-serif;
 }
 
-#image1 {
-    position: absolute;
-    top: 50px;
-    left: 50px;
+/* home page */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f8f9fa;
 }
 
-#image2 {
+#main-header {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 36px; /* adjust this value to get the size you want */
+}
+
+#main-paragraph {
+    text-align: center;
+    padding: 20px 50px;
+    font-size: 24px; /* adjust this value to get the size you want */
+}
+
+/* clock */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#countdown {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+    height: 50px; /* adjust this value based on the size of your countdown timer */
+}
+
+/* images */
+#passport_img {
     position: absolute;
-    top: 100px;
-    left: 100px;
+    width: 38%; /* adjust this value to get the size you want */
+    height: auto;
+    top: 290px;
+    left: 13%;
+}
+
+#cocktail_img {
+    position: absolute;
+    width: 20%; /* adjust this value to get the size you want */
+    height: auto;
+    top: 190px;
+    right: 24%;
+}
+/* details */
+#wedding-details {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
 }
