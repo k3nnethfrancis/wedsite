@@ -5,7 +5,7 @@
 
 body {
     font-family: 'CustomFont', 'Brush Script MT', 'Lucida Handwriting', 'Comic Sans MS', cursive, sans-serif;
-    background-image: url('../assets/art/backgroundv2.png'); /* replace 'your-image.jpg' with your actual image file name */
+    background-image: url('../assets/art/background.png'); /* replace 'your-image.jpg' with your actual image file name */
     background-repeat: no-repeat;
     background-size: cover;
     
