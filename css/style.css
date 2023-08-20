@@ -5,16 +5,13 @@
 
 body {
     font-family: 'CustomFont', 'Brush Script MT', 'Lucida Handwriting', 'Comic Sans MS', cursive, sans-serif;
-    background-image: url('../assets/art/background.png'); /* replace 'your-image.jpg' with your actual image file name */
+    background-color: #f9f8f2;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
-/* home page */
 header {
     width: 100%;
-    /*background-color: #f8f9fa;*/
 }
 
 #main-header {
@@ -24,7 +21,6 @@ header {
     background-color: transparent;
 }
 
-/* clock */
 #countdown {
     text-align: center;
     font-size: 24px;
@@ -32,23 +28,20 @@ header {
     height: auto;
 }
 
-/* images */
 #ceremony_img {
     display: block;
-    width: 40%;
+    width: 50%;
     height: auto;
-    margin: 0 auto; /* remove the top margin to bring the image closer to the clock */
+    margin: 0 auto;
 }
 
-/* main paragraph */
 #main-paragraph {
     text-align: center;
-    padding: 0px; /* remove the padding to bring the paragraph closer to the image */
+    padding: 0px;
     font-size: 20px;
-    margin-top: 10px; /* add a top margin to create some space between the image and the paragraph */
+    margin-top: 10px;
 }
 
-/* details */
 #wedding-details {
     text-align: center;
     font-size: 18px;
@@ -58,27 +51,24 @@ header {
     margin: 10px 20;
 }
 
-/* footer */
 #foot {
     text-align: right;
     font-size: 18px;
     padding: 20px;
 }
 
-/* other images *//*
-#cocktail_img, #passport_img {
-    display: block;
-    width: 50%;
-    height: auto;
-    margin: 20px auto;
-}
-*//* javascript */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     text-align: center;
+    font-size: 24px;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
 }
 
 nav li {
@@ -91,9 +81,64 @@ nav li a {
     color: black;
 }
 
-/*
-h1 {
-    text-align: center;
-    padding-top: 50px;
+/* welcome page */
+.welcome-page {
+    /* This rule applies to any HTML element with class="welcome-page" */
+    text-align: center; /* Centers the text horizontally for the welcome page */
+    color: black; /* Sets the text color to black for the welcome page */
+    font-size: 2em; /* Sets the font size to 2em (2 times the current font size) for the welcome page */
+    display: flex; /* Enables flexbox, a layout mode providing for the arrangement of elements on the welcome page */
+    flex-direction: column; /* Stacks the flex items vertically (not horizontally) on the welcome page */
+    justify-content: flex-start; /* Aligns the flex items at the start of the welcome page */
+    align-items: center; /* Centers the flex items along the horizontal line on the welcome page */
+    height: 100vh; /* Sets the height of the welcome page to 100% of the viewport's height */
+    padding-top: 20px; /* Adds a 20px padding at the top of the welcome page */
 }
-*/
+
+#shell_img {
+    /* This rule applies to the HTML element with id="shell", which is the image on the welcome page */
+    width: 25%; /* Sets the width of the image to 50% of its container's width */
+    height: auto; /* Sets the height of the image to scale automatically (to maintain its aspect ratio) */
+}
+
+.welcome-page h1, .welcome-page p {
+    /* This rule applies to the h1 and p elements inside any HTML element with class="welcome-page" */
+    margin: 0; /* Removes the default margin from the h1 and p elements on the welcome page */
+}
+
+.welcome-page a {
+    /* This rule applies to the a (link) element inside any HTML element with class="welcome-page" */
+    color: black; /* Sets the text color of the link to black on the welcome page */
+    text-decoration: none; /* Removes the underline from the link on the welcome page */
+    padding: 10px; /* Adds a 10px padding around the link on the welcome page */
+    margin-top: 20px; /* Adds a 20px margin at the top of the link on the welcome page */
+}
+
+/* about page */
+.about-us {
+    text-align: center; /* Centers the text horizontally for the welcome page */
+    color: black; /* Sets the text color to black for the welcome page */
+    font-size: 1.5em; 
+}
+#page-title {
+    position: absolute;
+    top: 80px; /* Increase this value to move the title down */
+    left: 40px;
+    font-size: 3.5em;
+}
+
+#about_img {
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* rsvp page */
+.rsvp {
+    text-align: center;
+}
+#rsvp_img {
+    width: 60%;
+    height: auto;
+}
