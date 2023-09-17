@@ -47,6 +47,10 @@ header {
     margin-bottom: 40px;
 }
 
+.date-text {
+    text-align: center;
+}
+
 #wedding-details {
     text-align: center;
     font-size: 18px;
